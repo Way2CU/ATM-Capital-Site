@@ -51,6 +51,15 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+	$('form').on('dialog-show', function() {
+			$('form').hide();
+			$('div.send').hide();
+			$('div#thank_you')
+				.css('visibility','visible')
+				.css('opacity','1');
+			return false;
+		});
 };
 
 

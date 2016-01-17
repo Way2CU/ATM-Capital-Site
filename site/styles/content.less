@@ -1,0 +1,348 @@
+/**
+ * Main Style Sheet
+ * ATM Capital
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+div#thank_you {
+ 	position: absolute;
+ 	text-align: center;
+ 	top: 0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: fade(black,80%);
+ 	visibility: hidden;
+ 	opacity: 0;
+ 	transition: all 0.5s;
+ 	z-index: 100000;
+}
+
+div#thank_you img {
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+
+ header {
+ 	display: block;
+ 	position: relative;
+ 	padding:20px calc(~'(100vw - 1200px)' / 2);
+
+ 	background-image: url(../images/background-business.jpg);
+ 	background-repeat: no-repeat;
+ 	background-position: center top;
+ 	background-size: 1920px 980px;
+ 	min-height: 940px;
+ 	position: relative;
+ }
+
+div#content {
+ 	width: 650px;
+ 	text-align: center;
+ }
+
+div#content h1 {
+	margin: 0px;
+ 	color: @color_ac_title;
+ 	font-size: 4.5em;
+ 	font-weight: 900;
+ 	position: relative;
+ }
+
+div#content h1:after {
+	content: "";
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	margin-left: -325px;
+	width: 650px;
+	height: 2px;
+	background-color: @color_ac_phone_color;
+} 
+
+div#thank_you p,
+div#content p.normal {
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: @color_text;
+	font-size: 2.5em;
+	font-weight: 700;
+	width: 80%;
+}
+
+div#thank_you p {
+	color: @color_ac_white;
+}
+
+div#content p.cost {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 2.5em;
+	font-weight: 700;
+	color: @color_ac_phone_color;
+}
+
+div#thank_you p strong,
+div#content p.cost strong {
+	display: block;
+	font-size: 1.5em;
+	font-weight: 900;
+}
+
+div#content p.cost strong span {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0.6em;
+}
+
+div#content p.cost strong span.sign {
+	display: inline-block;
+	vertical-align: bottom;
+	font-weight: 900;
+}
+div#thank_you a,
+div#content a {
+	display: inline-block;
+	text-decoration: none;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 80px;
+	padding-right: 80px;
+	color: @color_ac_phone_color;
+	border-radius: 20px;
+	background-color: fade(@color_ac_white,50%);
+	border: 2px solid @color_ac_white;
+	font-size: 4em;
+	font-weight: 700;
+	transition: all 0.3s;
+}
+
+div#thank_you a {
+	background-color: transparent;
+	color: @color_ac_white
+}
+
+div#thank_you a:hover,
+div#content a:hover {
+	background-color: @color_ac_phone_color;
+	color: @color_ac_white;
+}
+
+div#thank_you a:hover svg,
+div#content a:hover svg {
+	fill: @color_ac_white;
+}
+
+div#thank_you a svg,
+div#content a svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	fill: @color_ac_phone_color;
+	width: 60px;
+	height: 60px;
+	transition: all 0.3s;
+}
+
+div#thank_you a svg {
+	fill: @color_ac_white;
+}
+
+/*Form*/
+
+div#form_wrap {
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	left: calc(~'(50% - 600px)');
+	background-color: fade(@color_ac_grey,80%);
+	width: 460px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+div#form_wrap img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%
+}
+
+div#form_wrap p {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	color: @color_ac_white;
+	font-weight: 700;
+	font-size: 1.7em;
+}
+
+div#form_wrap form label {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	position: relative;
+}
+
+div#form_wrap form label:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	right: 0px;
+	background-image: url(../images/form-icons.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 150px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+div#form_wrap form label:nth-of-type(1):before {
+	background-position: -100px 0px;
+}
+
+div#form_wrap form label:nth-of-type(2):before {
+	background-position: -50px 0px;
+}
+
+div#form_wrap form label input {
+	width: calc(~'(100% - 50px)');
+	padding-right: 50px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	font-size: 1.2em;
+	border: 1px solid @color_ac_grey;
+	background-color: fade(@color_ac_white,80%);
+	transition: all 0.3s;
+}
+
+div#form_wrap form label input:hover {
+	background-color: fade(@color_ac_white,90%);
+}
+
+div#form_wrap form label input:focus {
+	background-color: fade(@color_ac_white,100%);
+}
+
+div#form_wrap form div.controls {
+	margin-left: auto;
+	margin-right: auto;
+	width: 79.8%;
+}
+
+div#form_wrap form div.controls button {
+	display: block;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	width: 100.5%;
+	border: none;
+	font-weight: 700;
+	color: @color_ac_white;
+	background: linear-gradient(to bottom, @color_ac_title 0%,#005a9a 100%);
+	cursor: pointer;
+	transition: all 0.3s;
+	font-size: 1.2em;
+	position: relative;
+	z-index: 0;
+}
+
+div#form_wrap form div.controls button:hover:before {
+	opacity: 1;
+}
+
+div#form_wrap form div.controls button:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, #005a9a 0%, @color_ac_title 100%);
+	z-index: -1;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+/*Features section*/
+
+div#features {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	background-color: fade(@color_ac_grey,80%);
+
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+div#features ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+div#features ul li {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: calc(~'(150px - 10px)');
+	border: 1px solid @color_ac_white;
+	position: relative;
+}
+
+div#features ul li svg {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	min-height: 70px;
+	fill: @color_ac_white;
+}
+
+div#features ul li p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	min-height: 55px;
+	line-height: 1;
+	color: @color_ac_white;
+}
+
+
+footer > div {
+	padding: 0px calc(~'(100% - 1200px) / 2');
+	background-color: black;
+	text-align: center;
+}
+
+/**
+ * Copyright
+ */
+footer div.copyright {
+	display: inline-block;
+	color: @color_ac_white;
+}
+
+footer div.copyright a {
+	color: white;
+}	

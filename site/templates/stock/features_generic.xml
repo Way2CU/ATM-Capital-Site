@@ -11,6 +11,7 @@
 -->
 <document>
 	<li class="stock feature">
+		
 		<!-- Sprite image -->
 		<cms:if condition="isset($template['sprite'])">
 			<svg>
@@ -24,7 +25,7 @@
 
 		<!-- Title -->
 		<cms:if condition="isset($template['title'])">
-			<h4><cms:var param="title" multilanguage="yes"/></h4>
+			<p><cms:var param="title" multilanguage="yes"/></p>
 		</cms:if>
 
 		<!-- Content -->

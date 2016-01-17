@@ -1,5 +1,14 @@
 {
     "site_title": "ATM Capital",
-    "phone": "*6790",
-    
+    "phone": "6790*",
+    "send": "שלח פרטים",
+    "title_header": "הלוואות לכל מטרה",
+    "subtitle_header": "לקבלת אישור מיידי להלוואה התקשרו עכשיו!",
+    "title_thanks": "<strong>תודה </strong> נציגינו יחזרו אליכם בהקדם",
+    "employee": "לשכירים<strong> <span>עד- </span> 20,000<span class=\"sign\"> ₪ </span> </strong> ",
+    "business": "עסקים/עצמאים <strong><span>עד- </span> 50,000<span class=\"sign\"> ₪ </span> </strong> ",
+    "title_form": "לקבלת הלוואה עכשיו! מלאו פרטיכם ונחזור אליכם:",
+    "copyright_holder": "Copyright &copy; 2015. by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU</a>.",
+    "copyright_text": "All rights reserved."
+
 }
