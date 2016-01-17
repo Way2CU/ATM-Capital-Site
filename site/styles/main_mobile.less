@@ -1,0 +1,64 @@
+/**
+ * Main Style Sheet
+ * ATM Capital
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
+ */
+
+@font-face {
+ 	font-family: 'Open Sans Hebrew';
+ 	font-style: bolder;
+ 	font-weight: 900;
+ 	src: url(../images/fonts/opensanshebrew-extrabold-webfont.woff) format('woff');
+ }
+
+@font-face {
+	font-family: 'Open Sans Hebrew';
+	font-style: bold;
+	font-weight: 700;
+	src: url(../images/fonts/opensanshebrew-bold-webfont.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Open Sans Hebrew';
+	font-style: regular;
+	font-weight: 400;
+	src: url(../images/fonts/opensanshebrew-regular-webfont.woff) format('woff');
+}
+
+ @color_ac_title: #3d9acc;
+ @color_ac_phone_color:  #2d5299;
+ @color_ac_form_grey: #95a5a6;
+ @color_ac_grey: #2c3e50;
+ @color_ac_white: white;
+ @color_text: #34495E;
+
+ @import "content_mobile.less";
+
+ @import (css) "stock/header.css";
+ @import (css) "stock/copyright.css";
+
+
+ body {
+ 	background-color: @color_ac_white;
+ 	color: @color_text;
+ 	font-family: 'Open Sans Hebrew', sans-serif;
+ }
+
+ input,
+ select,
+ textarea,
+ button {
+ 	font-family: 'Open Sans Hebrew';
+ 	font-weight: 400;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+ 	font-family: 'Open Sans Hebrew';
+ 	font-weight: 700;
+ }

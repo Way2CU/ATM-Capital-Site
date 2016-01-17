@@ -11,35 +11,10 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:svg file="site-sprite.svg"/>
 
-			<div id="thank_you">
-				<img src="_BASEURL.'/site/images/logo-white.svg'"  alt="logo" cms:eval="src"/>
-				<p><cms:text constant="title_thanks"/></p>
-				<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
-					cms:eval="href"
-					class="phone"
-					>
-					<cms:text constant="phone"/>
-					<svg>
-						<use
-							href="#phone"
-							xlink:href="site/images/site-sprite.svg#phone"
-							/>
-					</svg>
-
-				</a>
-			</div>
-
-			<header>
-				<div id="content">
-					<h1><cms:text constant="title_header"/></h1>
-
-					<p class="cost"><cms:text constant="employee"/></p>
-
-					<p class="cost"><cms:text constant="business"/></p>
-
-					<p class="normal"><cms:text constant="subtitle_header"/></p>
-
+			<cms:desktop>
+				<div id="thank_you">
+					<img src="_BASEURL.'/site/images/logo-white.svg'"  alt="logo" cms:eval="src"/>
+					<p><cms:text constant="title_thanks"/></p>
 					<a
 						href="'tel:'.urlencode(Language::getText('phone'))"
 						cms:eval="href"
@@ -56,14 +31,116 @@
 					</a>
 				</div>
 
+			<!-- Desktop header -->
+				<header>
+					<div id="content">
+						<h1><cms:text constant="title_header"/></h1>
+
+						<p class="cost"><cms:text constant="employee"/></p>
+
+						<p class="cost"><cms:text constant="business"/></p>
+
+						<p class="normal"><cms:text constant="subtitle_header"/></p>
+
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="phone"/>
+							<svg>
+								<use
+									href="#phone"
+									xlink:href="site/images/site-sprite.svg#phone"
+									/>
+							</svg>
+
+						</a>
+					</div>
+
+					<div id="form_wrap">
+						<img src="_BASEURL.'/site/images/logo-white.svg'"  alt="logo" cms:eval="src"/>
+						<p><cms:text constant="title_form"/></p>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact"
+							/>
+					</div>
+
+					<div id="features">
+						<ul>
+							<cms:module
+								name="articles"
+								action="show_list"
+								group="features"
+								template="stock/features_generic.xml"
+								>
+								<param name="title" value=""/>
+								<param name="sprite" value="site/images/site-sprite.svg"/>
+							</cms:module>
+						</ul>	
+					</div>
+				</header>
+			</cms:desktop>
+
+			<!-- Mobile  -->
+			<cms:mobile>
+				<header>
+					<div id="content">
+						<img src="_BASEURL.'/site/images/logo-color.svg'"  alt="logo" cms:eval="src"/>
+
+						<h1><cms:text constant="title_header"/></h1>
+
+						<p class="cost"><cms:text constant="employee"/></p>
+
+						<p class="cost"><cms:text constant="business"/></p>
+
+						<p class="normal"><cms:text constant="subtitle_header"/></p>
+
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="phone"/>
+							<svg>
+								<use
+									href="#phone"
+									xlink:href="site/images/site-sprite.svg#phone"
+									/>
+							</svg>
+
+						</a>
+					</div>
+				</header>
+
 				<div id="form_wrap">
-					<img src="_BASEURL.'/site/images/logo-white.svg'"  alt="logo" cms:eval="src"/>
 					<p><cms:text constant="title_form"/></p>
 					<cms:module
 						name="contact_form"
 						action="show"
 						text_id="contact"
 						/>
+
+					<div id="thank_you">
+						<img src="_BASEURL.'/site/images/logo-white.svg'"  alt="logo" cms:eval="src"/>
+						<p><cms:text constant="title_thanks"/></p>
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="phone"/>
+							<svg>
+								<use
+									href="#phone"
+									xlink:href="site/images/site-sprite.svg#phone"
+									/>
+							</svg>
+
+						</a>
+					</div>	
 				</div>
 
 				<div id="features">
@@ -79,8 +156,8 @@
 						</cms:module>
 					</ul>	
 				</div>
-			</header>
 
+			</cms:mobile>
 			<footer>
 				<div>
 					<cms:template file="stock/copyright.xml">

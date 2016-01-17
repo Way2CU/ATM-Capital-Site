@@ -53,7 +53,7 @@ Site.on_load = function() {
 		Site.mobile_menu = new Caracal.MobileMenu();
 
 	$('form').on('dialog-show', function() {
-			$('form').hide();
+			// $('form').hide();
 			$('div.send').hide();
 			$('div#thank_you')
 				.css('visibility','visible')
