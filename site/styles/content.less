@@ -345,4 +345,50 @@ footer div.copyright {
 
 footer div.copyright a {
 	color: white;
-}	
+}
+
+/* Tablet version */
+
+@media all and (max-width: 1024px) and (min-width: 768px) { 
+
+div#content {
+	width: 525px;
+}
+
+div#content h1 {
+	font-size: 3.5em;
+}
+
+div#content h1:after {
+	margin-left: -250px;
+	width: 500px;
+}
+
+div#thank_you p, div#content p.normal {
+	font-size: 2em;
+}
+
+div#content p.cost {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+div#features ul li {
+	margin-top: 20px;
+}
+
+div#form_wrap {
+	    left: calc(~'(50% - 480px)');
+	    width: 440px;	
+}
+
+div#thank_you a, div#content a {
+	font-size: 3em;
+}
+
+div#thank_you a svg, div#content a svg {
+	width: 50px;
+	height: 50px;
+}
+
+}
