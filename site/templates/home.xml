@@ -20,7 +20,7 @@
 						cms:eval="href"
 						class="phone"
 						>
-						<cms:text constant="phone"/>
+						<cms:text constant="phone_text"/>
 						<svg>
 							<use
 								href="#phone"
@@ -47,7 +47,7 @@
 							cms:eval="href"
 							class="phone"
 							>
-							<cms:text constant="phone"/>
+							<cms:text constant="phone_text"/>
 							<svg>
 								<use
 									href="#phone"
@@ -103,7 +103,7 @@
 							cms:eval="href"
 							class="phone"
 							>
-							<cms:text constant="phone"/>
+							<cms:text constant="phone_text"/>
 							<svg>
 								<use
 									href="#phone"
@@ -131,7 +131,7 @@
 							cms:eval="href"
 							class="phone"
 							>
-							<cms:text constant="phone"/>
+							<cms:text constant="phone_text"/>
 							<svg>
 								<use
 									href="#phone"
