@@ -36,9 +36,13 @@
 					<div id="content">
 						<h1><cms:text constant="title_header"/></h1>
 
-						<p class="cost"><cms:text constant="employee"/></p>
-
-						<p class="cost"><cms:text constant="business"/></p>
+						<!-- Header list-->
+						<cms:module
+							name="articles"
+							action="show"
+							text_id="header_list"
+							template="parts/article.xml"
+							/>
 
 						<p class="normal"><cms:text constant="subtitle_header"/></p>
 
@@ -77,8 +81,8 @@
 								template="stock/features_generic.xml"
 								>
 								<param name="title" value=""/>
-								<param name="sprite" value="site/images/site-sprite.svg"/>
-							</cms:module>
+								<param name="sprite" value="site-sprite.svg"/>
+						</cms:module>
 						</ul>	
 					</div>
 				</header>
@@ -91,10 +95,14 @@
 						<img src="_BASEURL.'/site/images/logo-color.svg'"  alt="logo" cms:eval="src"/>
 
 						<h1><cms:text constant="title_header"/></h1>
-
-						<p class="cost"><cms:text constant="employee"/></p>
-
-						<p class="cost"><cms:text constant="business"/></p>
+						
+						<!-- Header list-->
+						<cms:module
+							name="articles"
+							action="show"
+							text_id="header_list"
+							template="parts/article.xml"
+							/>
 
 						<p class="normal"><cms:text constant="subtitle_header"/></p>
 

@@ -56,6 +56,7 @@ div#content {
 div#content h1 {
   	margin-left: auto;
   	margin-right: auto;
+  	padding-bottom: 0.5em;
    	font-size: 2em;
    	font-weight: bolder;
    	color: @color_ac_title;
@@ -72,7 +73,16 @@ div#content h1:after {
 	width: 300px;
 	height: 2px;
 	background-color: @color_ac_phone_color;
-} 
+}
+
+div#content ul {
+	margin: 0;
+	text-align: right;
+}
+
+div#content ul li {
+	font-size: 1.2em;
+}
 
 div#thank_you p,
 div#content p.normal {
@@ -218,6 +228,10 @@ div#form_wrap form label:before {
 	height: 50px;
 }
 
+div#form_wrap form label:last-of-type:before {
+	display: none;
+}
+
 div#form_wrap form label:nth-of-type(1):before {
 	background-position: -100px 0px;
 }
@@ -299,8 +313,8 @@ div#features ul li {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-top: 10px;
-	margin-right: 5px;
-	margin-left: 5px;
+	margin-right: 2px;
+	margin-left: 2px;
 	width: calc(~'(150px - 10px)');
 	border: 1px solid @color_ac_white;
 	position: relative;
