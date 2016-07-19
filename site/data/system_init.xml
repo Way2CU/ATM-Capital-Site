@@ -10,11 +10,11 @@
 	<module name="contact_form" order="5" preload="no"/>
 	<module name="articles" order="6" preload="no"/>
 	<module name="mandrill" order="7" preload="no"/>
-	
+
 	<user 
 		fullname="Administrator" 
 		username="admin"
-		password="" 
-		level="10" 
+		password=""
+		level="10"
 	/>
 </document>
