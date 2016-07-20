@@ -1,8 +1,8 @@
 /**
  * Main JavaScript
- * Site Name
+ * Atm Capital
  *
- * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
  * Authors:
  */
 
@@ -60,6 +60,13 @@ Site.on_load = function() {
 				.css('opacity','1');
 			return false;
 		});
+	// handle analytics event
+	$('form').on('analytics-event', function(event, data) {
+		if (!data.error)
+			dataLayer.push({
+            	'event':'leadSent'
+            });
+	});
 };
 
 
