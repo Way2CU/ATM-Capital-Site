@@ -9,6 +9,7 @@
 		</head>
 
 		<body>
+			<cms:raw file="parts/gtm.txt"/>
 			<cms:svg file="site-sprite.svg"/>
 
 			<cms:desktop>
