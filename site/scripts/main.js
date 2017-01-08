@@ -61,12 +61,12 @@ Site.on_load = function() {
 			return false;
 		});
 	// handle analytics event
-	$('form').on('analytics-event', function(event, data) {
-		if (!data.error)
+	Caracal.ContactForm.list[0].events.connect('submit-success', function(data) {
 			dataLayer.push({
-            	'event':'leadSent'
-            });
-	});
+				event: "leadSent"
+			});
+			return true;
+		});
 };
 
 
